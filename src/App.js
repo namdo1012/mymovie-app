@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   render() {
-    const apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=2911792a";
+    const apiUrl = "https://www.omdbapi.com/?i=tt3896198&apikey=2911792a";
     const { s, results, selected } = this.state;
 
     return (
