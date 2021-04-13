@@ -23,9 +23,7 @@ class Search extends Component {
     if (e.key === "Enter") {
       axios(query)
         .then(({ data }) => {
-          console.log(data);
           let results = data.Search;
-          console.log(results);
           this.props.onSearch(results);
           this.setState({ results }); //results : results
         })
@@ -40,7 +38,7 @@ class Search extends Component {
       <Fragment>
         <section className="searchbox-section">
           <input
-            className="searschbox"
+            className="searchbox"
             type="text"
             placeholder="Search for a movie..."
             onChange={this.handleInput}
